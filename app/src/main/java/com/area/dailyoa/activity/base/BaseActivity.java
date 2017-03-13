@@ -10,11 +10,23 @@ import butterknife.ButterKnife;
  * Created by Administrator on 2017/3/9.
  */
 
-public class BaseActivity extends FragmentActivity {
+public abstract class BaseActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        ButterKnife.bind(this);
         super.onCreate(savedInstanceState);
+        //用户在继承BaseActivity页面可以使用
+        setContentView(getLayoutId());
+        ButterKnife.bind(this);
+        //初始化
+        init();
+    }
+
+    /**
+     * 这里用来返回res-->layout 里面布局
+     */
+    protected abstract int getLayoutId();
+
+    public void init() {
     }
 }
