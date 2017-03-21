@@ -20,7 +20,8 @@
         <activity
             android:name=".activity.guide.GuideActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.main.MainActivity" />
+        <activity android:name=".activity.main.MainActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
     </application>
 
 </manifest>

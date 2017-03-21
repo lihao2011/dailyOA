@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">每日OA</string>
+    <string name="tab_message">消息</string>
+    <string name="tab_workgroup">项目部</string>
+    <string name="tab_contacts">联系人</string>
+    <string name="tab_mine">我的</string>
 </resources>
