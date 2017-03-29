@@ -1,24 +1,15 @@
 package com.area.dailyoa.activity.main;
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.area.dailyoa.R;
 import com.area.dailyoa.activity.base.BaseActivity;
-import com.area.dailyoa.widget.DragPointView;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 
 
 public class MainActivity extends BaseActivity {//AppCompatActivity
 
 
-    @Bind(R.id.main_viewpager)
-    ViewPager main_viewpager;
+//    @Bind(R.id.main_viewpager)
+//    ViewPager main_viewpager;
     //消息
 //    @Bind(R.id.tab_img_message)
 //    ImageView tab_img_message;

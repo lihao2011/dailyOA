@@ -1,145 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_bottom_tab"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="55dp"
     android:layout_alignParentBottom="true"
-    android:background="#f9f9f9"
-    android:orientation="vertical">
+    android:background="@color/pager_gray_bg"
+    android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.2dp"
-        android:background="#dfdfdd" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
-    <!-- 底部导航 -->
-
-    <LinearLayout
-        android:id="@+id/ly_tab_menu"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:background="#33ffffff"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:id="@+id/ly_tab_menu_channel"
-            android:layout_width="0dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#2f33"
-            android:gravity="center">
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
 
-            <RelativeLayout
+            <TextView
+                android:id="@+id/tab_message"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#7d32"
-                android:padding="5dp">
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_message"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/tab_message"
+                android:textColor="@drawable/tab_menu_text"
+                android:textSize="12sp"
+                android:textStyle="normal" />
 
-                <TextView
-                    android:id="@+id/tab_message"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:background="@android:color/white"
-                    android:drawableTop="@drawable/tab_menu_message"
-                    android:gravity="center"
-                    android:text="@string/tab_message"
-                    android:textColor="@drawable/tab_menu_text" />
-            </RelativeLayout>
-        </LinearLayout>
+            <TextView
+                android:id="@+id/red_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tab_message"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toRightOf="@+id/tab_message"
+                android:background="@drawable/unread_count"
+                android:gravity="center"
+                android:text="99+"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
 
-        <LinearLayout
-            android:id="@+id/ly_tab_menu_message"
-            android:layout_width="0dp"
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tab_workgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_workgroup"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/tab_workgroup"
+                android:textColor="@drawable/tab_menu_text"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/red_workgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/tab_workgroup"
+                android:layout_marginRight="6dp"
+                android:src="@mipmap/aii_hdpi" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#20fa"
-            android:gravity="center">
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
 
-            <RelativeLayout
+            <TextView
+                android:id="@+id/tab_contacts"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#80f9"
-                android:padding="5dp">
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_contacts"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="@string/tab_contacts"
+                android:textColor="@drawable/tab_menu_text"
+                android:textSize="12sp"
+                android:textStyle="normal" />
 
-                <TextView
-                    android:id="@+id/tab_workgroup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:background="@android:color/white"
-                    android:drawableTop="@drawable/tab_menu_workgroup"
-                    android:gravity="center"
-                    android:text="@string/tab_workgroup"
-                    android:textColor="@drawable/tab_menu_text" />
-            </RelativeLayout>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/ly_tab_menu_better"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#6229"
-            android:gravity="center">
-
-            <RelativeLayout
+            <TextView
+                android:id="@+id/red_contacts"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#229"
-                android:padding="5dp">
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tab_contacts"
+                android:layout_marginLeft="-14dp"
+                android:layout_marginTop="-4dp"
+                android:layout_toRightOf="@+id/tab_contacts"
+                android:background="@drawable/unread_count"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </RelativeLayout>
 
-                <TextView
-                    android:id="@+id/tab_menu_better"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:background="@android:color/white"
-                    android:drawableTop="@drawable/tab_menu_contacts"
-                    android:gravity="center"
-                    android:text="@string/tab_contacts"
-                    android:textColor="@drawable/tab_menu_text" />
-            </RelativeLayout>
-        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
 
-        <LinearLayout
-            android:id="@+id/ly_tab_menu_setting"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#20fa"
-            android:gravity="center">
-
-            <RelativeLayout
+            <TextView
+                android:id="@+id/tab_mine"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="#09f"
-                android:padding="5dp">
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/tab_menu_mine"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="2dp"
+                android:text="@string/tab_mine"
+                android:textColor="@drawable/tab_menu_text"
+                android:textSize="12sp"
+                android:textStyle="normal" />
 
-                <TextView
-                    android:id="@+id/tab_menu_setting"
-                    android:layout_width="wrap_content"
-                    android:layout_height="48dp"
-                    android:background="@android:color/white"
-                    android:drawableTop="@drawable/tab_menu_mine"
-                    android:gravity="center"
-                    android:text="@string/tab_mine"
-                    android:textColor="@drawable/tab_menu_text" />
-
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/red_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/tab_mine"
+                android:src="@mipmap/aii_hdpi" />
+        </RelativeLayout>
+    </RelativeLayout>
 </LinearLayout>
-
-
-    <!--
-
-    <ImageView
-                        android:id="@+id/tab_menu_setting_partner"
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_marginLeft="-5dp"
-                        android:layout_toRightOf="@id/tab_menu_setting"
-                        android:src="@mipmap/aii"
-                        android:visibility="visible" />
-
-    -->

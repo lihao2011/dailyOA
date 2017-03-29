@@ -3,6 +3,22 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="text_yellow">#FFC800</color>
-    <color name="text_gray">#8D7A71</color>
+
+    <!--  -->
+    <color name="big_title_text">#666666</color><!--1大标题文字-->
+    <color name="main_content_text">#de000000</color><!--2主要内容文字-->
+    <color name="secondary_important_text">#89000000</color><!--3次级重要文字-->
+    <color name="gray_color">#42000000</color><!--4引导文字   按钮灰色-->
+    <color name="divider_line">#dbdbdb</color><!--5分割线条-->
+    <color name="pager_gray_bg">#ededed</color><!--6页面灰色背景-->
+    <color name="theme_green">#00ba0e</color><!--7主体颜色 绿色-->
+    <color name="theme_green_deep">#00810c</color><!--8主体颜色 深绿色-->
+    <color name="theme_red">#f74c31</color><!--9主体颜色 红色-->
+    <color name="theme_red_deep">#bb1010</color><!--10主体颜色 深红色-->
+    <color name="theme_blue">#5aa8fa</color>
+    <color name="box_gray_bg">#e5e5e5</color>
+    <color name="box_gray_bg_deep">#d5d5d5</color>
+    <color name="ring_gray_bg">#d9d9d9</color>
+    <color name="ring_blue_bg">#09cbfc</color>
+    <color name="text_gray">#a2a2a2</color>
 </resources>
