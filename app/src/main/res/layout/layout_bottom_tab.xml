@@ -8,6 +8,7 @@
     android:orientation="horizontal">
 
     <RelativeLayout
+        android:id="@+id/rlyt_message"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -50,6 +51,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rlyt_workgroup"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -86,6 +88,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rlyt_contacts"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -128,6 +131,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rlyt_mine"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1">
