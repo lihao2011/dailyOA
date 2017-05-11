@@ -18,6 +18,7 @@ public abstract class BaseActivity extends FragmentActivity {
         //用户在继承BaseActivity页面可以使用
         setContentView(getLayoutId());
         ButterKnife.bind(this);
+        initListener();
         //初始化
         init();
     }
@@ -27,6 +28,11 @@ public abstract class BaseActivity extends FragmentActivity {
      */
     protected abstract int getLayoutId();
 
+    public void initListener() {
+
+    }
+
     public void init() {
+
     }
 }

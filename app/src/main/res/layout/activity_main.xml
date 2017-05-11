@@ -18,15 +18,8 @@
         android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/line_tab"
-        android:layout_below="@+id/tv_title" />
-
-    <View
-        android:id="@+id/line_tab"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
         android:layout_above="@+id/llyt_bottom_tab"
-        android:background="@color/divider_line" />
+        android:layout_below="@+id/tv_title" />
 
     <include layout="@layout/layout_bottom_tab" />
 </RelativeLayout>

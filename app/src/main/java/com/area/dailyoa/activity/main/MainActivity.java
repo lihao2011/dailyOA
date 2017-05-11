@@ -1,9 +1,11 @@
 package com.area.dailyoa.activity.main;
 
 import android.support.v4.view.ViewPager;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.area.dailyoa.R;
 import com.area.dailyoa.activity.base.BaseActivity;
@@ -11,7 +13,7 @@ import com.area.dailyoa.activity.base.BaseActivity;
 import butterknife.Bind;
 
 
-public class MainActivity extends BaseActivity {//AppCompatActivity
+public class MainActivity extends BaseActivity implements View.OnClickListener {//AppCompatActivity
 
 
     //viewpager
@@ -52,11 +54,43 @@ public class MainActivity extends BaseActivity {//AppCompatActivity
     }
 
     @Override
+    public void initListener() {
+        super.initListener();
+        rlyt_message.setOnClickListener(this);
+        rlyt_workgroup.setOnClickListener(this);
+        rlyt_contacts.setOnClickListener(this);
+        rlyt_mine.setOnClickListener(this);
+    }
+
+    @Override
     public void init() {
+        super.init();
         changeTextViewColor();
     }
 
     private void changeTextViewColor() {
 
+    }
+
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.rlyt_message:
+                Toast.makeText(this,"消息",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rlyt_workgroup:
+                Toast.makeText(this,"项目部",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rlyt_contacts:
+                Toast.makeText(this,"联系人",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rlyt_mine:
+                Toast.makeText(this,"我的",Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
+        }
     }
 }
